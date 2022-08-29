@@ -5,36 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="mystyle.css">
+    <script src="myscript.js" async></script>
     <title>Calculator</title>
 </head>
 <body>
     <container>
         <div class="calculator">
             <div class="display">
-                num go here
+                <div id="upper"></div>
+                <div id="lower"></div>
             </div>
             <div class="topl">
-            <div class="reset">Reset</div>
-            <div class="backsp">Backspace</div>
+                <button class="reset" onclick="clearAll()">Clear</button>
+                <button class="backsp" onclick="store(this)">Backspace</button>
             </div>
             <div class="numbers">
                 
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-                <div>/</div>
-                <div>4</div>
-                <div>5</div>
-                <div>6</div>
-                <div>x</div>
-                <div>7</div>
-                <div>8</div>
-                <div>9</div>
-                <div>-</div>
-                <div>0</div>
-                <div>.</div>
-                <div>+</div>
-                <div>=</div>
+                <button onclick="store(this)">1</button>
+                <button onclick="store(this)">2</button>
+                <button onclick="store(this)">3</button>
+                <button onclick="store(this)">/</button>
+                <button onclick="store(this)">4</button>
+                <button onclick="store(this)">5</button>
+                <button onclick="store(this)">6</button>
+                <button onclick="store(this)">x</button>
+                <button onclick="store(this)">7</button>
+                <button onclick="store(this)">8</button>
+                <button onclick="store(this)">9</button>
+                <button onclick="store(this)">-</button>
+                <button onclick="store(this)">0</button>
+                <button onclick="store(this)">.</button>
+                <button onclick="add()">+</button>
+                <button onclick="calculate()">=</button>
 
             </div>
         </div>
