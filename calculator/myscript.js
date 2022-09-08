@@ -105,7 +105,7 @@ function calculate() {
         outputL.innerHTML = result
         outputUpper.innerHTML = prevV + ' x ' + currentVal + ' = ' + result
     } else if (operator == '/'){
-        result = Number(currentVal) / Number(prevV)
+        result =  Number(prevV) / Number(currentVal)
         result = Math.round(result * 100) / 100
         outputL.innerHTML = result
         outputUpper.innerHTML = prevV + ' / ' + currentVal + ' = ' + result
