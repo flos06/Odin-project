@@ -21,8 +21,8 @@ grid {
 
 .sideleft {
 
-    background-color: black;
     grid-area: 1 / 1 / span 2;
+    background-image: url("background.jpg")
 
 }
 
