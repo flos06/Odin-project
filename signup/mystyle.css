@@ -4,6 +4,8 @@ html {
 
 body {
     height: 100%;
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 container {
@@ -14,35 +16,129 @@ container {
 grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     height: 100%;
 
 }
 
 img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 100px;
+    max-height: 100px;
 }
 
 .logo {
-    width: 100px;
-    height: 100px;
+
+    grid-area: 1/1;
+    font-family: 'Share Tech Mono', monos pace ;
+    font-size: 44px;
+    color: white;
+    align-self: end;
+
+
+
+}
+
+.transparant {
+    display: flex;
+    align-items: center;
+    grid-area: 1/1;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+ 
+
 }
 
 .sideleft {
-
-    grid-area: 1 / 1 / span 2;
+    display: grid;
+    grid-area: 1 / 1 / span 3;
     background-image: url("background.jpg");
+    margin-top: -1px;
+    margin-left: -1px;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-repeat: no-repeat;
+  background-size: cover;
 
 
+}
+
+.topright {
+    display: grid;
+    font-size: 18px;
+    font-weight: bold;
+    
+    padding-bottom: 20px;
+    background-color: lightgray;
+}
+
+.text {
+    align-self: end;
+    margin-left: 10%;
+    margin-bottom: 5%;
 }
 
 .sideright {
-    background-color: blue;
-
+   
+    background-color: white;
+    grid-area: 2 / 2;
 }
 
 .bottomright {
-    background-color: red;
-    grid-area: 2 / 2;
+    background-color: lightgray;
+    grid-area: 3 / 2;
+}
+
+.input {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    height: 100%;
+    margin-right: 20%;
+    margin-left: 10%;
+
+}
+
+input {
+    width: 45%;
+    border-color: #E5E7EB;
+    border-radius: 7px;
+    border-style: solid;
+    height: 25px;
+
+  
+}
+form {
+    height: 100%;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid blue;
+}
+
+.create {
+    
+    background-color: lightgray;
+    border: 2px solid darkblue;
+    border-radius: 7px;
+    height: 30px;
+    width: 200px;
+    margin-top: 40px;
+    color: black;
+    font-weight: bold;
+    font-size: large;
+    
+    
+}
+.log {
+    margin-left: 10%;
+    font-size: large;
+    
+}
+a {
+    text-decoration: none;
+    color: darkblue;
+}
+
+a:hover {
+    color: red;
 }

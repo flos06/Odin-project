@@ -11,18 +11,66 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="mystyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     </head>
     <body>
         <container>
             <grid>
                 <div class="sideleft">
                     <div class="logo">
-                        <img src="./bluray.jpg">
+                        <div class="transparant">
+                        <img src="./blu.png">
+                        &emsp;MovieW
+                    </div></div>
+                </div>
+                <div class="topright">
+                    <div class="text">
+                    Find the release date for the latest movies. <br>Both in cinemas as well as on blu-ray / streaming services. <br> <br>
+
+                    Sign up now to get notifications when your bookmarked movies have released!
                     </div>
                 </div>
-                    
-                <div class="sideright"></div>
-                <div class="bottomright"></div>
+                <div class="sideright">
+                    <form action="form">
+                    <div class="input">
+                       
+                        <div class="inpB">
+                            <label for="first_name">First Name:<br></label>
+                            <input type="text" id="first_name" name="first_name" required>
+                        </div>
+                        <div class="inpB">
+                            <label for="last_name">Last Name:<br></label>
+                            <input type="text" id="last_name" name="last_name" required>
+                        </div>
+                        <div class="inpB">
+                            <label for="email">Email<br></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="inpB">
+                            <label for="phone_number">Phone Number<br></label>
+                            <input type="text" id="phone_number" name="phone_number" minlength="9" maxlength="9" required>
+                        </div>
+                        <div class="inpB">
+                            <label for="user_password">Password:<br></label>
+                            <input type="password" id="user_password" name="password" required>
+                        </div>
+                        <div class="inpB">
+                            <label for="user_password">Confirm Password:<br></label>
+                            <input type="password" id="user_password" name="password" required>
+                        </div>
+
+
+
+
+                </div></div>
+                <div class="bottomright">
+                    <div class="log"><button class ="create" type="submit">Create Account</button>
+                
+                <p>Already have an account? <a href="#">Log in</a> </p></div>
+            </div>
+            </form>
             </grid>
 
         </container>
