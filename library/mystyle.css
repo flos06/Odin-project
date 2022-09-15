@@ -1,0 +1,65 @@
+.hidden {
+    display:none;
+}
+
+body {
+    margin: auto;
+    background-color: rgb(31, 28, 28);
+    color: white;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr auto;
+    grid-template-rows: 1fr auto;
+    height: 100%;
+    
+}
+
+.books {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-area: 2/2;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-right: 5%;
+    gap: 10px;
+}
+#read {
+    width: 15px;
+    margin: 0;
+    margin-bottom: 4px;
+}
+
+.form {
+    grid-area: 2/1;
+}
+
+#addBook {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    height: 100px;
+    grid-area: 1/1/span 1/ span 2;
+    font-weight: bold;
+    font-size: 28px;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkgray;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px;
+    border-radius: 4px;
+}
