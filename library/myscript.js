@@ -64,7 +64,7 @@ function displayBooks(){
         read.classList.add("readBtn");
         read.textContent = "Toggle read"
         read.dataset.linkedArray = index;
-        card.appendChild(read)
+        card.append(read)
 
         read.addEventListener("click", toggle)
         function toggle() {
