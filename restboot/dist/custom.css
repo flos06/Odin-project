@@ -1,0 +1,24 @@
+body,html{
+    margin:0;
+    width:100%;
+  }
+  html{
+      background-color: RGB(33, 37, 41);
+  }
+
+  .btn-primary:hover {
+    color: red;
+    background-color: #04c3ee;
+    border-color: #5b288e;
+  }
+
+  p {
+    white-space: pre;
+    background-color: RGB(33, 37, 41);
+    color: white;
+  }
+
+  .main {
+    padding-top: 50px;
+    background-color: RGB(33, 37, 41);
+  }
