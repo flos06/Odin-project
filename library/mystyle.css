@@ -63,3 +63,11 @@ body {
     border: 1px;
     border-radius: 4px;
 }
+
+.readBtn {
+    margin-bottom: 5px;
+}
+
+.removeBtn {
+    margin-top: 5px;
+}
