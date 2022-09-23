@@ -5,10 +5,10 @@ form.addEventListener('submit', formData)
 
 // constructor for books
 function Book(title, author, pages, read) {
-    this.Title = title
-    this.Author = author
-    this.Pages = pages
-    this.Read = read
+    this.title = title
+    this.author = author
+    this.pages = pages
+    this.read = read
 }
 // function to add book to array
 function addBookToLibrary(title, author, pages, read){
@@ -59,12 +59,6 @@ function displayBooks(){
             card.remove()
             displayBooks();
         }
-        for (let key in myLibrary) {
-            console.log(`${key}: ${myLibrary[key]}`)
-            const text = document.createElement('p');
-            text.textContent = (`${key}: ${myLibrary[key]}`)
-            card.appendChild(text);
-        }
         // create read button
         const read = document.createElement("button");
         read.classList.add("readBtn");
@@ -90,7 +84,12 @@ function displayBooks(){
         }
 
 
-        
+        for (let key in myLibrary) {
+            console.log(`${key}: ${myLibrary[key]}`)
+            const text = document.createElement('p');
+            text.textContent = (`${key}: ${myLibrary[key]}`)
+            card.appendChild(text);
+        }
         index++;
     })
     checkB.value = 'No'
